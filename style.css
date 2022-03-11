@@ -1,6 +1,7 @@
 body {
-    font-size: 2rem;
     color: aliceblue;
+    font-size: 1.5em;
+    margin: 0%;
 }
 #background {
     z-index: -1;
@@ -13,3 +14,23 @@ body {
     bottom: 0;
     opacity: 80%;
 }
+main {
+    background-color: black;
+    opacity: 50%;
+    text-align: center;
+}
+
+#my-name{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+
+
