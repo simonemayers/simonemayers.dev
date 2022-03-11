@@ -21,7 +21,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 60%;
+    opacity: 50%;
 }
 
 main {
@@ -29,16 +29,86 @@ main {
 }
 
 #my-name{
-    font-size: 9vw;
+    font-size: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Press Start 2P', cursive;
 }
 
+.letters{
+    animation: color-animation 0.5s linear infinite;
+    
+}
+#hi-h {
+    --color-3: #13fa26;
+    --color-2: #8af593;
+    --color-1: #037a0f;
+}
 
+#hi-i {
+    --color-2: #8af593;
+    --color-1: #13fa26;
+    --color-3: #037a0f;
+}
 
+#im-i {
+    --color-3: #13fa26;
+    --color-1: #8af593;
+    --color-2: #037a0f;
+}
 
+#im-m{
+    --color-1: #13fa26;
+    --color-3: #8af593;
+    --color-2: #037a0f;
+}
+#apostrophe{
+    --color-3: #13fa26;
+    --color-1: #8af593;
+    --color-2: #037a0f;
+}
 
+#simone-s{
+    --color-2: #13fa26;
+    --color-1: #8af593;
+    --color-3: #037a0f;
+}
+#simone-i{
+    --color-2: #13fa26;
+    --color-3: #8af593;
+    --color-1: #037a0f;
+}
+#simone-m{
+    --color-2: #13fa26;
+    --color-3: #8af593;
+    --color-1: #037a0f;
+}
+#simone-o{
+    --color-1: #13fa26;
+    --color-3: #8af593;
+    --color-2: #037a0f;
+}
+#simone-n{
+    --color-3: #13fa26;
+    --color-2: #8af593;
+    --color-1: #037a0f;
+}
+#simone-e{
+    --color-2: #13fa26;
+    --color-1: #8af593;
+    --color-3: #037a0f;
+}
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
 
 
