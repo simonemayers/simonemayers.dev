@@ -38,67 +38,66 @@ main {
 }
 
 .letters{
-    animation: color-animation 0.5s linear infinite;
+    animation: color-animation 0.4s linear infinite;
     
 }
 #hi-h {
     --color-3: #13fa26;
-    --color-2: #8af593;
-    --color-1: #037a0f;
+    --color-2: #48f356;
+    --color-1: #04a314;
 }
 
 #hi-i {
-    --color-2: #8af593;
+    --color-2: #48f356;
     --color-1: #13fa26;
-    --color-3: #037a0f;
+    --color-3: #04a314;
 }
 
 #im-i {
     --color-3: #13fa26;
-    --color-1: #8af593;
-    --color-2: #037a0f;
+    --color-1: #48f356;
+    --color-2: #04a314;
 }
 
 #im-m{
     --color-1: #13fa26;
-    --color-3: #8af593;
-    --color-2: #037a0f;
+    --color-3: #48f356;
+    --color-2: #04a314;
 }
 #apostrophe{
     --color-3: #13fa26;
-    --color-1: #8af593;
-    --color-2: #037a0f;
+    --color-1: #48f356;
+    --color-2: #04a314;
 }
-
 #simone-s{
     --color-2: #13fa26;
-    --color-1: #8af593;
-    --color-3: #037a0f;
+    --color-1: #48f356;
+    --color-3: #04a314;
 }
 #simone-i{
     --color-2: #13fa26;
-    --color-3: #8af593;
-    --color-1: #037a0f;
+    --color-3: #48f356;
+    --color-1: #04a314;
 }
 #simone-m{
     --color-2: #13fa26;
-    --color-3: #8af593;
-    --color-1: #037a0f;
+    --color-3: #48f356;
+    --color-1: #04a314;
 }
 #simone-o{
     --color-1: #13fa26;
-    --color-3: #8af593;
-    --color-2: #037a0f;
+    --color-3: #48f356;
+    --color-2: #04a314;
 }
 #simone-n{
     --color-3: #13fa26;
-    --color-2: #8af593;
-    --color-1: #037a0f;
+    --color-2: #48f356;
+    --color-1: #04a314;
 }
 #simone-e{
     --color-2: #13fa26;
-    --color-1: #8af593;
-    --color-3: #037a0f;
+    --color-1: #48f356;
+    --color-3: #04a314;
 }
 
 @keyframes color-animation {
