@@ -2,9 +2,11 @@ body {
     color: aliceblue;
     font-size: 1.5em;
     margin: 0%;
+    /* Color Pallete */
     --dark: #04a314; 
     --medium: #13fa26; 
     --light: #48f356; 
+    font-family: 'Orbitron', sans-serif;
 }
 
 #background {
@@ -49,61 +51,61 @@ main {
     animation: color-animation 0.4s linear infinite;
     
 }
-
-#hi-h {
+/* Color Pallete */
+.l-1 {
     --light: #13fa26;
     --medium: #48f356;
     --dark: #04a314;
 }
 
-#hi-i {
+.l-2 {
     --medium: #48f356;
     --dark: #13fa26;
     --light: #04a314;
 }
 
-#im-i {
+.l-3 {
     --light: #13fa26;
     --dark: #48f356;
     --medium: #04a314;
 }
 
-#im-m{
+.l-4{
     --dark: #13fa26;
     --light: #48f356;
     --medium: #04a314;
 }
-#apostrophe{
+.l-5{
     --light: #13fa26;
     --dark: #48f356;
     --medium: #04a314;
 }
-#simone-s{
+.l-6{
     --medium: #13fa26;
     --dark: #48f356;
     --light: #04a314;
 }
-#simone-i{
+.l-7{
     --medium: #13fa26;
     --light: #48f356;
-    --color-1: #04a314;
+    --dark: #04a314;
 }
-#simone-m{
+.l-8{
     --medium: #13fa26;
     --light: #48f356;
-    --color-1: #04a314;
+    --dark: #04a314;
 }
-#simone-o{
+.l-9{
     --dark: #13fa26;
     --light: #48f356;
     --medium: #04a314;
 }
-#simone-n{
+.l-10{
     --light: #13fa26;
     --medium: #48f356;
     --dark: #04a314;
 }
-#simone-e{
+.l-11{
     --medium: #13fa26;
     --dark: #48f356;
     --light: #04a314;
@@ -161,13 +163,13 @@ main {
 }
 .table{
     color: white;
-    border-color: white;
-    background-color: rgba(4, 163, 20, 0.5);
+    border-color: var(--medium);
+    border-radius: 12px;
 }
 
 
 .interests-container tbody{
-    border-color: white;
+    border-color: var(--medium);
     color: var(--medium);
 }
 .interests-container tbody tr{
@@ -187,6 +189,33 @@ main {
 }
 
 .table thead tr th.col-1{
-    border-right: solid white 1px;;
+    border-right: solid 1px;
+    border-color: var(--medium);
     
+}
+
+.page-header{
+    padding-left: 2%;
+    padding-top: 2%;
+    font-size: 0.9em;
+}
+
+.page-header .letters{
+    margin-right: -6px;
+}
+
+.btn-primary{
+    background-color: white;
+    color: var(--dark);
+}
+.btn-primary:hover{
+    background-color: black;
+    border-color: black;
+
+}
+.card{
+    background-color: var(--dark);
+    color: white;
+    border-color: black;
+    border-width: 2px;
 }
