@@ -2,6 +2,9 @@ body {
     color: aliceblue;
     font-size: 1.5em;
     margin: 0%;
+    --dark: #04a314; 
+    --medium: #13fa26; 
+    --light: #48f356; 
 }
 
 #background {
@@ -16,7 +19,7 @@ body {
 }
 #background img{
     height: 100%;
-    max-width: 150%;
+    max-width: 180%;
     min-width: 100%;
 }
 
@@ -46,73 +49,144 @@ main {
     animation: color-animation 0.4s linear infinite;
     
 }
+
 #hi-h {
-    --color-3: #13fa26;
-    --color-2: #48f356;
-    --color-1: #04a314;
+    --light: #13fa26;
+    --medium: #48f356;
+    --dark: #04a314;
 }
 
 #hi-i {
-    --color-2: #48f356;
-    --color-1: #13fa26;
-    --color-3: #04a314;
+    --medium: #48f356;
+    --dark: #13fa26;
+    --light: #04a314;
 }
 
 #im-i {
-    --color-3: #13fa26;
-    --color-1: #48f356;
-    --color-2: #04a314;
+    --light: #13fa26;
+    --dark: #48f356;
+    --medium: #04a314;
 }
 
 #im-m{
-    --color-1: #13fa26;
-    --color-3: #48f356;
-    --color-2: #04a314;
+    --dark: #13fa26;
+    --light: #48f356;
+    --medium: #04a314;
 }
 #apostrophe{
-    --color-3: #13fa26;
-    --color-1: #48f356;
-    --color-2: #04a314;
+    --light: #13fa26;
+    --dark: #48f356;
+    --medium: #04a314;
 }
 #simone-s{
-    --color-2: #13fa26;
-    --color-1: #48f356;
-    --color-3: #04a314;
+    --medium: #13fa26;
+    --dark: #48f356;
+    --light: #04a314;
 }
 #simone-i{
-    --color-2: #13fa26;
-    --color-3: #48f356;
+    --medium: #13fa26;
+    --light: #48f356;
     --color-1: #04a314;
 }
 #simone-m{
-    --color-2: #13fa26;
-    --color-3: #48f356;
+    --medium: #13fa26;
+    --light: #48f356;
     --color-1: #04a314;
 }
 #simone-o{
-    --color-1: #13fa26;
-    --color-3: #48f356;
-    --color-2: #04a314;
+    --dark: #13fa26;
+    --light: #48f356;
+    --medium: #04a314;
 }
 #simone-n{
-    --color-3: #13fa26;
-    --color-2: #48f356;
-    --color-1: #04a314;
+    --light: #13fa26;
+    --medium: #48f356;
+    --dark: #04a314;
 }
 #simone-e{
-    --color-2: #13fa26;
-    --color-1: #48f356;
-    --color-3: #04a314;
+    --medium: #13fa26;
+    --dark: #48f356;
+    --light: #04a314;
 }
 
 @keyframes color-animation {
-    0%    {color: var(--color-1)}
-    32%   {color: var(--color-1)}
-    33%   {color: var(--color-2)}
-    65%   {color: var(--color-2)}
-    66%   {color: var(--color-3)}
-    99%   {color: var(--color-3)}
-    100%  {color: var(--color-1)}
-  }
+    0%    {color: var(--dark)}
+    32%   {color: var(--dark)}
+    33%   {color: var(--medium)}
+    65%   {color: var(--medium)}
+    66%   {color: var(--light)}
+    99%   {color: var(--light)}
+    100%  {color: var(--dark)}
+}
+
+.navbar{
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0%;
+}
+
+.carousel-container{
+    width: 70%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.carousel-item img[src*="project-2"]{
+    max-height: 18em;
+    min-height: 5em;
+}
+.card-container{
+    color:black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    flex-wrap: wrap;
+}
+.card-title {
+    font-size: 1em;
+}
+.card-text{
+    font-size: 0.5em;
+}
+.nav-link.active{
+    font-size: 1.4em;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+}
+.interests-container{
+    width: 65%;
+    margin: auto;
+    padding-top: 3%;
+}
+.table{
+    color: white;
+    border-color: white;
+    background-color: rgba(4, 163, 20, 0.5);
+}
 
 
+.interests-container tbody{
+    border-color: white;
+    color: var(--medium);
+}
+.interests-container tbody tr{
+    color: white;
+}
+
+.bi{
+    font-size: 1.2em;
+    color: var(--light);
+}
+
+.table tr img{
+    width: 50px;
+}
+.table tbody th{
+    border-right-width: 1px;
+}
+
+.table thead tr th.col-1{
+    border-right: solid white 1px;;
+    
+}
