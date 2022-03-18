@@ -166,8 +166,6 @@ main {
     border-color: var(--medium);
     border-radius: 12px;
 }
-
-
 .interests-container tbody{
     border-color: var(--medium);
     color: var(--medium);
@@ -175,12 +173,10 @@ main {
 .interests-container tbody tr{
     color: white;
 }
-
 .bi{
     font-size: 1.2em;
     color: var(--light);
 }
-
 .table tr img{
     width: 50px;
 }
@@ -204,11 +200,12 @@ main {
     margin-right: -6px;
 }
 
-.btn-primary{
+.btn{
     background-color: white;
+    border-color: var(--light);
     color: var(--dark);
 }
-.btn-primary:hover{
+.btn:hover{
     background-color: black;
     border-color: black;
 
@@ -219,55 +216,52 @@ main {
     border-color: black;
     border-width: 2px;
 }
-
-@-webkit-keyframes {
-}
 @-webkit-keyframes extend {
     0% {
-        width: 600px;
-        height: 200px;
+        width: 10em;
+        height: 5em;
         border-radius: 100px;
         } 10% {
-        width: 610px;
-        height: 210px;
+        width: 11em;
+        height: 6em;
         background: #fff;
         margin-left: - 5px;
         margin-top: - 5px;
         } 20% {
-        width: 600px;
-        height: 200px;
-        background: #6fb07f;
+        width: 10em;
+        height: 5em;
+        background: var(--dark);
         margin-left: 0px;
         margin-top: 0px;
         } 100% {
-        width: 200px;
-        height: 200px;
+        width: 5em;
+        height: 5em;
         border-radius: 100px;
-        background: #6fb07f;
+        background: var(--dark);
         }
     }
 @keyframes extend {
     0% {
-        width: 600px;
-        height: 200px;
+        width: 10em;
+        height: 5em;
         border-radius: 100px;
         } 10% {
-        width: 610px;
-        height: 210px;
+        width: 11em;
+        height: 6em;
         background: #fff;
         margin-left: - 5px;
         margin-top: - 5px;
         } 20% {
-        width: 600px;
-        height: 200px;
-        background: #6fb07f;
+        width: 10em;
+        height: 5em;
+        background: var(--dark);
         margin-left: 0px;
         margin-top: 0px;
         } 100% {
-        width: 200px;
-        height: 200px;
+        width: 5em;
+        height: 5em;
         border-radius: 100px;
-        background: #6fb07f;
+        background: var(--dark);
         }
     }
 @-webkit-keyframes {
@@ -317,18 +311,18 @@ input, button, submit {
 
 .cont button {
     border-width: 1px;
-    width: 600px;
-    height: 200px;
+    width: 10em;
+    height: 5em;
     border-radius: 100px;
     background: #fff;
     position: relative;
-    border: 5px solid #6fb07f
+    border: 5px solid var(--dark)
 }
 
 
 .cont button > span {
-    font-size: 48px;
-    color: #6fb07f
+    font-size: 2em;
+    color: var(--dark)
 }
 
 .cont img {
@@ -363,20 +357,48 @@ input, button, submit {
     animation-fill-mode: forwards
     }
     
-    .cont button:focus > img {
-        /*animation*/
-        -webkit-animation: appear 1s ease-in-out;
-        -ms-animation: appear 1s ease-in-out;
-        animation: appear 1s ease-in-out;
-        -webkit-animation-fill-mode: forwards;
+.cont button:focus > img {
+    /*animation*/
+    -webkit-animation: appear 1s ease-in-out;
+    -ms-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
     /* Chrome, Safari, Opera */
     animation-fill-mode: forwards
+}
+.form {
+    width: 50%;
+    margin: auto;
+}
+.form label{
+    width: 35%;
+    text-align: center;
+}
+.active { 
+    animation: wiggle 2s linear 1;
+}
+@keyframes wiggle {
+    0%, 7% {
+    transform: rotateZ(0);
     }
-    .cont {
-        margin: auto;
-        width: 100vw;
-  
+    15% {
+        transform: rotateZ(-15deg);
     }
-    .cont .btn{
-        margin: auto;
+    20% {
+        transform: rotateZ(10deg);
     }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+
