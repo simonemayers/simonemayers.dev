@@ -182,6 +182,7 @@ tbody .bi{
 }
 .table tr img{
     width: 50px;
+    background-color: white;
 }
 .table tbody th{
     border-right-width: 1px;
